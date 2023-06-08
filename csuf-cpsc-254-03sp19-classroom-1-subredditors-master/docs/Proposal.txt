@@ -1,0 +1,14 @@
+﻿CPSC 254 Project Proposal
+By John, Sahil, and Jarod
+Team Member info.
+John, Sahil, and Jarod
+An overview on your project / project idea.
+For the group project, we chose to build a web crawler built with the open source library BeautifulSoup.
+Goals of your software 
+Our app will be used to scrape some content from any website and store the data in an output file.
+Resources used to build your software i.e. any open source libraries used, tools used or any existing open source project. 
+We will use the BeautifulSoup open source library, and the open source language tool that we will use will be done via Python.
+Mention how you would use these resources in your project.
+Similar to the Scrapy library, the BeautifulSoup library will give us the resources we need in order to build a web scraper, without needing to know the in-depth details of how they work
+If developing from an existing project mention what new features you would add.
+We will be creating our own project, so there would not be new features to add, we will however be utilizing open source libraries

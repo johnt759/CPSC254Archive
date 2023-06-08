@@ -1,0 +1,31 @@
+Python BeautifulSoup Instruction Manual
+-----------------------------------------
+Welcome to the BeautifulSoup Web Scraper Tool! Whether this is the first time you tried web scraping before or you acquired some prior knowledge in it, this documentation will guide you on how to utilize the web scraper written in Python language in order to retrieve any data from a website of your choice. If this is the first time you wanted to get started on Python web scrapping or for more information on BeautifulSoup, check out the website below:
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+(NOTE: In order to keep this wiki guide simple and tidy as possible, I will try to summarize only the crucial key points in the BeautifulSoup documentation.)
+
+Important Things to Remember
+-----------------------------------------
+from bs4 import BeautifulSoup
+You must declare this at the very top of the Python file if you want to do some web scrapping with BeautifulSoup. Otherwise, you won't be able to do anything along with bs4.
+
+BeautifulSoup(any parser library)
+Depending on what parser library you implemented when calling the BeautifulSoup function, it may take little or much time for the content to be extracted from an html. Not only that, some parsers that you use may require external dependency on another language, such as C or Python itself. If speed is your concern, I recommend using lxml for BeautifulSoup.
+
+attrs = {'class': 'thing', 'any-data': 'any content to read from}
+You can declare a list of attributes as a dictionary and assign any name of the content you wish to access.
+
+time.sleep(any number)
+Before you can use that, be sure to declare 'import time' at the very top of the Python file. This function will force the program to pause for awhile before continuing on.
+
+soup.find_all():
+If you want to search the tree for all the tags containing the specific input you want to look for, then you will be using those methods like above. Of course, you can specify on what kind of tag you wish to search for, as well as additional parameters such as attributes to further narrow your search terms.
+
+try:/except AnyError:
+Although the try and catch methods are not required in doing the scraping of the web content, it's not a bad idea to safeguard your program with this protocol. The 'try' part will first try to process the usual operations as declared below it. For the 'except' part, the error is specified on what problem the program runs into while running the 'try' part. Here, let's assume that the program passes (in other words, think continue, except in Python language.)
+
+Closing Note:
+-----------------------------------------
+By the time you finished reading this helpful guide on the BeautifulSoup Web Scraper program powered by Python, at least you will be familiar on how to retrive internet data from the world wide web and place it into any file for later reference. That way, in case that you want to check the contents of the crawled web data for your own use, you can count on the documentation to print out whatever information you wish to read from.
+
+In other words, Happy Scrapping!
